@@ -1,9 +1,9 @@
 # Training
 
 ## Creating a Pulumi Project
+- logging into and using pulumi backends 
 - creating a pulumi project 
 - examining the contents of a pulumi project 
-- logging into and using pulumi backends 
 
 ## Creating Docker Images 
 - resources and resource providers
