@@ -1,19 +1,18 @@
 # Training
 
-## show from service's perspective too 
-
 ## Stacks
-- init
-- select
-- ls
-- output
-- export
+- Creating a stack - init
+- Listing a stack - ls
+- Selecting a stack
+- Exporting a stack's state - export
 
 ## Stack Configurations
 - get
 - set
 - config
 - cp
+- get vs require - defaults
+- project level config vs stack level config
 
 ## Stack Outputs
 - in code and how to write
@@ -24,7 +23,8 @@
 
 ## Secrets
 - what is a Pulumi secret?
-- setting secrets from config and using in code
+- encryption `--secret` - Pulumi asks you if something is secret, if it suspects
+- setting secrets from config and using in code - get vs require
 - what happens when something is marked as a secret?
 - viewing config secrets from CLI
 
