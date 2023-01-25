@@ -9,6 +9,15 @@ Reusing the pulumi docker project as a starting point.
 - Selecting a stack
 - Exporting a stack's state - export
 
+## Stack Outputs
+- Outputs are values exporting from any given stack.
+- Outputs are shown during updates, can be retrieved via the CLI, and are displayed in the Pulumi Service
+- Common values exported from stacks are: resource ids, URLs, DNS names, Computed IP addresses, etc
+- These can be usedful for running CLI commands that include those values. Eg- curl against a recently deployed api
+- Another common use of stack outputs is using outputs from one stack as in puts to another. These inter-stack dependencies are accomplished via stack references.
+- Show in code how to set stack exports
+- Values can be directly from resources or derived.
+
 ## Stack Configurations
 - Each stack can has it's own configuration and it's own unique set of values in Pulumi.{stack_name}.yaml
 - Configuration values can be retrieved in code and also via the CLI. 
@@ -18,15 +27,6 @@ Reusing the pulumi docker project as a starting point.
 - cp - copy one stack config to another stack
 - get vs require - in code; defaults vs supplied values
 - project level config vs stack level config
-
-## Stack Outputs
-- Outputs are values exporting from any given stack.
-- Outputs are shown during updates, can be retrieved via the CLI, and are displayed in the Pulumi Service
-- Common values exported from stacks are: resource ids, URLs, DNS names, Computed IP addresses, etc
-- These can be usedful for running CLI commands that include those values. Eg- curl against a recently deployed api
-- Another common use of stack outputs is using outputs from one stack as in puts to another. These inter-stack dependencies are accomplished via stack references.
-- Show in code how to set stack exports
-- Values can be directly from resources or derived.
 
 ## Stack References
 - Based around stack outputs
